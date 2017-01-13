@@ -16,12 +16,12 @@
   height: 100%;
   }
   .red{
-    background:red;
+    background:#855600;
   padding:0;
   margin: 0 -15px;
   }
   .blue{
-    background:blue;
+    background:#FFECC9;
     padding:0;
   }
   .pt{
@@ -49,12 +49,35 @@
     font-size: 16px;
     padding: 2%;
   }
+  .text{
+      line-height: 30px;
+      font-size:16px;
+      padding:10% 0 5% 0;
+  }
+  .roy{
+      background-color: #D4FFFF;
+  }
+  .me{
+     background-color: #FFFFD4;
+
+  }
+  .word{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .small{
+    display: none;
+  }
+  .tot {
+    color: #000;
+    background-color: #fff;
+  }
 </style>
 
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div>
-    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top tot">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -78,11 +101,20 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div id="home" class="banner">
-        <img  class="img-responsive" src="http://pic.pimg.tw/ourstrings/4a8523d3ed2f5.jpg"/>
+    <div id="home" class="row banner roy">
 
+      <div class="col-md-6 col-sm-12 text-center text">
+        <div class=" visible-sm col-sm-6 visible-xs small">
+          <img  class="img-responsive" src="http://pic.pimg.tw/ourstrings/4a8523d3ed2f5.jpg"/>
+        </div>
+          <h2>roy&violin</h2>
+          <p>The violin is a wooden string instrument in the violin family. It is the smallest and highest-pitched instrument in the family in regular use. Smaller violin-type instruments are known, including the violino piccolo and the kit violin, but these are virtually unused in the 2010s. Electric violins are used in some forms of rock music; further, the violin has come to be played in many non-Western music cultures.</p>
+      </div>
+      <div class="col-md-6 hidden-sm hidden-xs big">
+        <img  class="img-responsive" src="http://pic.pimg.tw/ourstrings/4a8523d3ed2f5.jpg"/>
+      </div>
     </div>
-    <div id="resume">
+    <div id="resume" class="me">
 <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4">
 
@@ -102,8 +134,8 @@
 
       </div>
       <div class="col-xs-12 col-sm-6 col-md-8">
-          <div>
-          <h2 class="glyphicon glyphicon-user">自我簡介</h2>
+          <div class="word">
+          <h2 class="glyphicon glyphicon-user ">自我簡介</h2>
           <p>長頸鹿是非洲特有的動物，與鹿和牛有親緣關係，但屬於不同的科，即長頸鹿科。長頸鹿科包括長頸鹿和霍加狓兩種動物。[2]
   中國典籍關於長頸鹿的記載，最早出自晉代李石所著《續博物志》，記錄非洲索馬利亞沿岸撥拔力古國出產的異獸，身高一丈余頸長九尺。宋代趙汝適著《諸蕃志》中稱非洲長頸鹿為徂蠟：「狀如駝馳，而大如牛，色黃，前腳高五尺，後低三尺，頭高向上。」[3]明朝永樂十二年（1414），時值鄭和第四次出海，榜葛次國（今孟加拉）使臣將一隻長頸鹿進貢給明成祖，以「麒麟」為名，據說乃東非土語中的長頸鹿名稱giri之音譯[4][5]；在中國傳說中，麒麟為祥瑞之獸，明成祖便將其視為祥瑞之兆，命人撰文並繪圖記錄，以此標榜自己施政的偉大。存世的圖像記錄僅有傳沈度所繪的《麒麟圖》。[5]該典故流傳甚廣。長頸鹿在日語及韓語中的名稱皆源於麒麟（日語：キリン）[6]，在台語中也稱為「麒麟鹿」。</p>
           </div>
@@ -111,7 +143,7 @@
       </div>
 
     </div>
-  <div id="album">
+  <!---<div id="album">
     <div class="row">
       <div class=" col-xs-6 col-sm-4 col-md-3">
       <img class="img-thumbnail" src="http://image.digitalarchives.tw/ImageCache/00/5e/00/21.jpg"/>
@@ -141,7 +173,7 @@
 
   </div>
 
-  </div>
+</div> -->
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="bookstrap/js/bootstrap.min.js"></script>
